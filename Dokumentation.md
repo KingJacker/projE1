@@ -5,7 +5,7 @@
 
 ## 27/11/23
 - Mind Map vom System
-  ![[20231127_104146-1.jpg]]
+  ![[imgs/20231127_104146-1.jpg]]
 - Hauptproblemquellen analysieren
 	- Power Management
 	- Sensor Processing
