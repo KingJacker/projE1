@@ -6,3 +6,6 @@
 ## 27/11/23
 - Mind Map vom System
 - Hauptproblemquellen analysieren
+	- Power Management
+	- Sensor Processing
+	- Signal Out
