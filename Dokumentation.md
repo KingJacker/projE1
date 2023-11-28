@@ -11,7 +11,7 @@
 		- Li-Ion
 		- BMS
 	- Sensor Processing
-		- Sensor gibt 1 oder 0 als Signal zum Rpi (RaspberryPi)
+		- Sensor gibt 1 oder 0 als Signal zum RPI (RaspberryPi)
 	- Signal Out
 		- Signal über Ethernet
 
@@ -19,7 +19,7 @@
 ### Batterie Modul
 - Batterie Modul gelötet
 	- mit TP4065 Laderegler für die Li-ion Zellen
-![[imgs/batteriemodul.jpeg|300]]
+![[batteriemodul.jpeg|500]]
 
 ### Radar Sensor Kommunikation
 - Radar Sensor pinout:
@@ -55,9 +55,12 @@ b'\x00\x04\x03\x05\x01\x00\xff\x1d\x14U\n'
 >>> ser.readline()
 b'\x00\x04\x03\x05\x01\x00\xff\x1d\x14U\x0b\x00\x04\x03\x06\x00\x00\x80?\xfcEU\n'
 ```
-![[Screen Shot 2023-11-28 at 13.33.58.png]]
+![[imgs/Screen Shot 2023-11-28 at 13.33.58.png]]
 - Nach einigen Versuchen die erhaltenen Antworten zu entziffern gaben wir mit dieser Methode auf. Weil alle vom Händler verlinkten Setup-Guides auf einen Arduino library verwiesen.
 
+#### Arduino
+- Arduino Pinout
+![[imgs/A000066-pinout.png|500]]
 - Nach dem installieren der [Library](https://github.com/limengdu/Seeed-Studio-MR24FDB1-Sensor) und Ausführen des Beispiel Sketch *CRC_Checksum_Generation.ino* erhalten wir die Ausgabe:
 ```
 The datas send to the radar: 0x55 0x08 0x00 0x05 0x01 0x04 0x03 0x0c 0x80 
