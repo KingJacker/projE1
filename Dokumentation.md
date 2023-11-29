@@ -71,6 +71,7 @@ The CRC16 values is: 0c80
 
 
 ## 29/11/23
+### Sensor Abfrage
 - Mit neuem [Code](https://github.com/Seeed-Studio/Seeed_Arduino_24GHz_Radar_Sensor) hat es nun geklappt die Ausgabe vom Sensor mit dem Arduino über Serial auszulesen. Der nächste Schritt ist den Code für den RaspberryPi anzupassen.
 - Das Radar Modul ermöglicht eine einfache Status abfrage dadurch dass zwei output pins vom Radar Modul den Status aktuellen Status ausgeben über zwei Pins. S1 gibt an ob der Sensor Personen erkennt und S2 ob diese sich bewegen. 
 
@@ -90,3 +91,10 @@ while True:
 ```
 
 - **Die Verarbeitung von dem Sensorinput ist somit erreicht!**
+
+### Notstrom Umschaltung
+- Nach kurzer Recherche fanden wir ein Produkt das unseren Anforderungen perfekt erfüllt:[**WaveShare** USV HAT für Raspberry Pi Unterbrechungsfreie Stromversorgung](https://www.digitec.ch/de/s1/product/waveshare-usv-hat-fuer-raspberry-pi-unterbrechungsfreie-stromversorgung-entwicklungsboard-kit-25007122?supplier=8244233)
+- Mit einem Preis von 35.90 CHF passt dieser noch gut in unser Budget. --> Bestellt.
+
+### Plan für Morgen
+- Zweiten Raspi mitnehmen um Output zu machen

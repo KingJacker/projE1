@@ -7,3 +7,5 @@
 
 - [ ] Output
 	- [ ] Signal über Ethernet
+
+- [ ] (Gehäuse)
