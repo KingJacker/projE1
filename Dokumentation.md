@@ -22,7 +22,7 @@
 ![[batteriemodul.jpeg|500]]
 
 ### Radar Sensor Kommunikation
-- Radar Sensor pinout:
+- Radar Sensor Pinout: [Dokumentation](https://github.com/limengdu/Seeed-Studio-MR24FDB1-Sensor)
 ![[Pasted image 20231128111346.png|500]]
 - Stecker an Radar Modul angelötet und beim RaspberryPi eingesteckt.
 ```
