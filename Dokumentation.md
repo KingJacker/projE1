@@ -8,19 +8,21 @@
   ![[imgs/20231127_104146-1.jpg|500]]
 - Hauptprobleme analysieren
 	- Power Management
-		- Li-Ion
-		- BMS
-	- Sensor Processing
+		- Batterie Modul
+		- Notstrom Umschaltung
+	- Sensor Verarbeitung
 		- Sensor gibt 1 oder 0 als Signal zum RPI (RaspberryPi)
-	- Signal Out
+	- Output
 		- Signal über Ethernet
 
+Wir notieren unseren Fortschritt in [[Tasks]]
 ## 28/11/23
 ### Batterie Modul
 - Batterie Modul gelötet
-	- mit TP4065 Laderegler für die Li-ion Zellen
+- mit TP4065 Laderegler für die Li-ion Zellen
 ![[batteriemodul.jpeg|500]]
-
+**- Das Batterie Modul ist somit fertig**
+**- Für den Abschluss des Power Management Problems fehlt nun noch ein weg von Netzstrom zu der Batterie umzuschalten.**
 ### Radar Sensor Kommunikation
 - Radar Sensor Pinout: [Dokumentation](https://github.com/limengdu/Seeed-Studio-MR24FDB1-Sensor)
 ![[Pasted image 20231128111346.png|500]]
@@ -66,3 +68,25 @@ b'\x00\x04\x03\x05\x01\x00\xff\x1d\x14U\x0b\x00\x04\x03\x06\x00\x00\x80?\xfcEU\n
 The datas send to the radar: 0x55 0x08 0x00 0x05 0x01 0x04 0x03 0x0c 0x80 
 The CRC16 values is: 0c80
 ```
+
+
+## 29/11/23
+- Mit neuem [Code](https://github.com/Seeed-Studio/Seeed_Arduino_24GHz_Radar_Sensor) hat es nun geklappt die Ausgabe vom Sensor mit dem Arduino über Serial auszulesen. Der nächste Schritt ist den Code für den RaspberryPi anzupassen.
+- Das Radar Modul ermöglicht eine einfache Status abfrage dadurch dass zwei output pins vom Radar Modul den Status aktuellen Status ausgeben über zwei Pins. S1 gibt an ob der Sensor Personen erkennt und S2 ob diese sich bewegen. 
+
+- Dieser Code gibt den Status des Radarsensors auf dem RaspberryPi aus.
+```python
+# Code für Statusabfrage vom Radarsensor mit dem Raspi
+from gpiozero import DigitalInputDevice
+from time import sleep
+
+occupancy = DigitalInputDevice(24) # Radarmodul S1
+movement = DigitalInputDevice(23)  # Radarmodul S2
+
+while True:
+        out = f'Occupied: {occupancy.value}\nMovement: {movement.value}'
+        print(out)
+        sleep(1)
+```
+
+- **Die Verarbeitung von dem Sensorinput ist somit erreicht!**
