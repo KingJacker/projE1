@@ -98,3 +98,9 @@ while True:
 
 ### Plan für Morgen
 - Zweiten Raspi mitnehmen um Output zu machen
+
+## 30/11/2023
+### Signalübertragung Ethernet
+- Signalübertragung Ethernet mit zwei Raspi testen
+	- 1. Raspi gibt ein Output Signal
+	- 2. Raspi empfängt das Signal
