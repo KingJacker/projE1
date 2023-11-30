@@ -105,5 +105,6 @@ while True:
 	- 1. Raspi gibt ein Output Signal und sendet Signal an IP-Adresse
 	- Auf einem zweiten Raspi ist ein Netcat server eingerichtet um das Zustands Signal zu empfangen.
 - Problem: Solange Raspis im Wifi sind funktioniert die Verbindung via Ethernet nicht, aber wenn sie nicht mit wifi verbunden sind können wir nicht drauf zugreifen
+- Solution: Raspi mit Tastatur und Bildschirm ansteuern. Einmal dient der Projektor als Bildschirm und einmal ein ASUS Bildschirm, beide werden mit der gleichen Logitech Tastatur bedient.
 
 Netcat ist ein vielseitiges Kommandozeilen-Tool, das in Unix-ähnlichen Betriebssystemen (einschließlich Linux) sowie in Windows verfügbar ist. Es wurde entwickelt, um einfach Daten über Netzwerke zu übertragen.
