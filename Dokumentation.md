@@ -104,5 +104,6 @@ while True:
 - Signalübertragung Ethernet mit zwei Raspi testen
 	- 1. Raspi gibt ein Output Signal und sendet Signal an IP-Adresse
 	- Auf einem zweiten Raspi ist ein Netcat server eingerichtet um das Zustands Signal zu empfangen.
+- Problem: Solange Raspis im Wifi sind funktioniert die Verbindung via Ethernet nicht, aber wenn sie nicht mit wifi verbunden sind können wir nicht drauf zugreifen
 
 Netcat ist ein vielseitiges Kommandozeilen-Tool, das in Unix-ähnlichen Betriebssystemen (einschließlich Linux) sowie in Windows verfügbar ist. Es wurde entwickelt, um einfach Daten über Netzwerke zu übertragen.
