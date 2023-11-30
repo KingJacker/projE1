@@ -113,4 +113,4 @@ Netcat ist ein vielseitiges Kommandozeilen-Tool, das in Unix-ähnlichen Betriebs
 
 ### Plan für Morgen
 - Python Programm von der Sensorauslesung ergänzen mit Code zum senden der Information.
-- Python Programm für den Empfang auf dem zweiten Pi, sowie Ansterung einer LED zur Visualisierung der übertragenen Daten.
+- Python Programm für den Empfang auf dem zweiten Pi, sowie Ansterung einer LED zur Visualisierung der übertragenen Daten. [Python Zeroconf library](https://python-zeroconf.readthedocs.io/en/latest/api.html)
