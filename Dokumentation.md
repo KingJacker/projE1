@@ -1,9 +1,11 @@
 ## 24/11/23
+### Erste Schritte für Organisation
 - git Setup für Dokumentation
 - Raspi wifi config mit hotspot
 - Raspi updates & installation für grove kit
 
 ## 27/11/23
+### Systemaufbau
 - Mind Map vom System
   ![[imgs/20231127_104146-1.jpg|500]]
 - Hauptprobleme analysieren
@@ -114,3 +116,6 @@ Netcat ist ein vielseitiges Kommandozeilen-Tool, das in Unix-ähnlichen Betriebs
 ### Plan für Morgen
 - Python Programm von der Sensorauslesung ergänzen mit Code zum senden der Information.
 - Python Programm für den Empfang auf dem zweiten Pi, sowie Ansterung einer LED zur Visualisierung der übertragenen Daten. [Python Zeroconf library](https://python-zeroconf.readthedocs.io/en/latest/api.html)
+
+## 01/12/2023
+

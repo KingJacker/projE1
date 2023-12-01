@@ -50,3 +50,6 @@ pi 1:
 echo "Hello World" | nc 192.168.1.6 1234
 ```
 
+--> 
+to python program [stackoverflow: socket](https://stackoverflow.com/questions/17664143/python-port-listener-like-nc)
+
