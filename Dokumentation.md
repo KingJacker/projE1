@@ -118,4 +118,7 @@ Netcat ist ein vielseitiges Kommandozeilen-Tool, das in Unix-ähnlichen Betriebs
 - Python Programm für den Empfang auf dem zweiten Pi, sowie Ansterung einer LED zur Visualisierung der übertragenen Daten. [Python Zeroconf library](https://python-zeroconf.readthedocs.io/en/latest/api.html)
 
 ## 01/12/2023
-
+### Empfänger Pi Code
+- Auf dem Empfänger RaspberryPi haben wir ein Programm geschrieben, welches ein Signal über das Ethernetkabel empfangen kann und die Nachricht ausgibt.
+- Der Code ist nun soweit dass eine Led angesteuert wird vom Smpfänger wenn der Sender ein signal sendet.
+- Der finale Code des Tages ist in [[Code]] abgelegt.
