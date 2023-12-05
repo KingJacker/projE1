@@ -8,6 +8,10 @@
 - [ ] Output
 	- [ ] Signal über Ethernet
 
+- [ ] Automatic Startup
+	- [ ] Sender
+	- [ ] Empfänger
+
 - [ ] (Gehäuse)
 
 # Pflichtenheft
