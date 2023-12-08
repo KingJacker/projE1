@@ -122,3 +122,7 @@ Netcat ist ein vielseitiges Kommandozeilen-Tool, das in Unix-ähnlichen Betriebs
 - Auf dem Empfänger RaspberryPi haben wir ein Programm geschrieben, welches ein Signal über das Ethernetkabel empfangen kann und die Nachricht ausgibt.
 - Der Code ist nun soweit dass eine Led angesteuert wird vom Smpfänger wenn der Sender ein signal sendet.
 - Der finale Code des Tages ist in [[Code]] abgelegt.
+
+## 08/12/2023
+### Gehäuse
+![[gehäuse.png|200]]
