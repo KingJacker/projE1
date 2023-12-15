@@ -120,9 +120,18 @@ Netcat ist ein vielseitiges Kommandozeilen-Tool, das in Unix-ähnlichen Betriebs
 ## 01/12/2023
 ### Empfänger Pi Code
 - Auf dem Empfänger RaspberryPi haben wir ein Programm geschrieben, welches ein Signal über das Ethernetkabel empfangen kann und die Nachricht ausgibt.
-- Der Code ist nun soweit dass eine Led angesteuert wird vom Smpfänger wenn der Sender ein signal sendet.
+- Der Code ist nun soweit dass eine Led angesteuert wird vom Empfänger wenn der Sender ein signal sendet.
 - Der finale Code des Tages ist in [[Code]] abgelegt.
 
 ## 08/12/2023
 ### Gehäuse
 ![[gehäuse.png|200]]
+
+## 15/12/2023
+### Automatisches Starten der Python Skripts
+#### [Raspberry Pi: Launch Python Script on Startup](https://www.instructables.com/Raspberry-Pi-Launch-Python-script-on-startup/)
+- launcher.sh Skript erstellt
+- wird nach boot ausgeführt durch crontab
+- Raspi für Auto-login konfiguriert
+
+Da wir jetzt keinen output mehr über die Konsole haben, schliessen wir zwei LEDs an um die Übertragung des Sensor status zu überprüfen.

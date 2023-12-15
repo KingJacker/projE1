@@ -1,3 +1,17 @@
+
+# Login Credentials
+**Main Pi.**
+```
+name: EITraspberry2023hs4
+user: pi
+pass: EITfhnw4K
+```
+**Test Pi**
+```
+name: raspberrypi
+user: pi
+pass: root
+```
 ## Ethernet connection [stackexchange](https://raspberrypi.stackexchange.com/questions/55762/connecting-two-raspberry-pis-via-ethernet)
 The simplest way to hook up the two Pi's is to
 
@@ -76,3 +90,6 @@ while True:
     sleep(1)
 ```
 
+
+## Launch python script on startup
+[tutorial](https://www.instructables.com/Raspberry-Pi-Launch-Python-script-on-startup/)

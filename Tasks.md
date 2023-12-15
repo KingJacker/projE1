@@ -1,18 +1,19 @@
-- [ ] Power Management
+- [x] Power Management
 	- [x] Batterie Modul
-	- [ ] Notstrom Umschaltung
+	- [x] Notstrom Umschaltung
 
 - [x] Sensor Verarbeitung
 	- [x] Sensor gibt 1 oder 0 als Signal zum RPI (RaspberryPi)
 
 - [ ] Output
-	- [ ] Signal über Ethernet
+	- [x] Signal über Ethernet
+	- [ ] turn on leds
 
 - [ ] Automatic Startup
 	- [ ] Sender
 	- [ ] Empfänger
 
-- [ ] (Gehäuse)
+- [x] (Gehäuse)
 
 # Pflichtenheft
 ## Anforderungen
